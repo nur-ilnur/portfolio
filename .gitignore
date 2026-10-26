@@ -2,3 +2,6 @@ source-metadata.json
 youtube-metadata.json
 *.tar.gz
 .DS_Store
+
+# Local GitHub CLI binary
+.tools/

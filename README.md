@@ -2,6 +2,22 @@
 
 Статический одностраничный сайт. Все готовые файлы находятся в `dist/`: папку можно разместить на любом статическом хостинге, включая GitHub Pages или Cloudflare Pages.
 
+## GitHub Pages
+
+Репозиторий: https://github.com/nur-ilnur/portfolio
+
+Публикация настроена файлом `.github/workflows/deploy-pages.yml`: после push в `main` GitHub Actions публикует содержимое `dist/`. В настройках репозитория Pages нужно выбрать источник **GitHub Actions**.
+
+Адрес после включения Pages и успешной публикации: https://nur-ilnur.github.io/portfolio/
+
+Обычное обновление из папки проекта:
+
+```bash
+git add .
+git commit -m "Update portfolio"
+git push origin main
+```
+
 ## Локальный просмотр
 
 Из папки проекта: `python3 -m http.server 4173 --directory dist`.
