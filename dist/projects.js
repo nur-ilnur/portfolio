@@ -1,5 +1,12 @@
 window.PORTFOLIO_PROJECTS = [
   {
+    "title": "Обзор Haval H3",
+    "category": "youtube",
+    "url": "https://www.youtube.com/watch?v=-IfiaM-uVQo",
+    "youtubeId": "-IfiaM-uVQo",
+    "image": "assets/youtube--IfiaM-uVQo.jpg"
+  },
+  {
     "title": "Феномен Dyson",
     "category": "youtube",
     "url": "https://www.youtube.com/watch?v=lXh36lfkjoo",
@@ -21,34 +28,25 @@ window.PORTFOLIO_PROJECTS = [
     "image": "assets/youtube-xHLDHwfEhpQ.jpg"
   },
   {
-    "title": "Бусов × Решетун",
-    "category": "podcast",
-    "url": "https://yadi.sk/i/pl-3b9MO8ZS_ZQ",
-    "image": "assets/work-0-0.jpg"
-  },
-  {
-    "title": "Бусов × Лазарев",
-    "category": "podcast",
-    "url": "https://yadi.sk/i/Fslv8RqLaPeLeQ",
-    "image": "assets/work-0-3.jpg"
-  },
-  {
-    "title": "Битрикс24",
+    "title": "Иль Примо",
     "category": "integration",
-    "url": "https://disk.yandex.ru/d/Pwsm1afQIDZiUA/%D0%91%D0%B8%D1%82%D1%80%D0%B8%D0%BA%D1%81%204k.mp4",
-    "image": "assets/work-2-0.jpg"
-  },
-  {
-    "title": "Иль · Промо",
-    "category": "integration",
-    "url": "https://disk.yandex.ru/d/Pwsm1afQIDZiUA/%D0%98%D0%BB%D1%8C%20%D0%9F%D1%80%D0%BE%D0%BC%D0%BE%204k.mp4",
-    "image": "assets/work-2-1.jpg"
+    "url": "https://www.youtube.com/watch?v=Vk6ZZukMWYc",
+    "youtubeId": "Vk6ZZukMWYc",
+    "image": "assets/youtube-Vk6ZZukMWYc.jpg"
   },
   {
     "title": "Т-Банк",
     "category": "integration",
-    "url": "https://disk.yandex.ru/d/Pwsm1afQIDZiUA/%D0%A2%D0%91%D0%B0%D0%BD%D0%BA%204k%20VK.mp4",
-    "image": "assets/work-2-2.jpg"
+    "url": "https://www.youtube.com/watch?v=F059WLPrIJ4",
+    "youtubeId": "F059WLPrIJ4",
+    "image": "assets/youtube-F059WLPrIJ4.jpg"
+  },
+  {
+    "title": "Битрикс24",
+    "category": "integration",
+    "url": "https://www.youtube.com/watch?v=WUiruoxsxhk",
+    "youtubeId": "WUiruoxsxhk",
+    "image": "assets/youtube-WUiruoxsxhk.jpg"
   },
   {
     "title": "Урбан Медиа × КГИ",
@@ -70,5 +68,17 @@ window.PORTFOLIO_PROJECTS = [
     "url": "https://www.youtube.com/shorts/KGgoJ7t7xQI",
     "youtubeId": "KGgoJ7t7xQI",
     "image": "assets/work-1-0.jpg"
+  },
+  {
+    "title": "Бусов × Решетун",
+    "category": "podcast",
+    "url": "https://yadi.sk/i/pl-3b9MO8ZS_ZQ",
+    "image": "assets/work-0-0.jpg"
+  },
+  {
+    "title": "Бусов × Лазарев",
+    "category": "podcast",
+    "url": "https://yadi.sk/i/Fslv8RqLaPeLeQ",
+    "image": "assets/work-0-3.jpg"
   }
 ];

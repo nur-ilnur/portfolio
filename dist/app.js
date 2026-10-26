@@ -1,5 +1,6 @@
 const grid = document.querySelector('#project-grid');
 const shortsGrid = document.querySelector('#shorts-grid');
+const podcastsGrid = document.querySelector('#podcasts-grid');
 const playIcon = '<span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4 20 12 7 20Z"/></svg></span>';
 const categories = { youtube: 'YouTube', podcast: 'Подкаст', integration: 'Интеграция', shorts: 'Shorts / Reels' };
 function makeCard(project) {
@@ -44,14 +45,23 @@ function makeCard(project) {
   card.append(action, info);
   return card;
 }
-window.PORTFOLIO_PROJECTS.forEach(project => (project.category === 'shorts' ? shortsGrid : grid).append(makeCard(project)));
+window.PORTFOLIO_PROJECTS.forEach(project => {
+  const target = project.category === 'shorts' ? shortsGrid : project.category === 'podcast' ? podcastsGrid : grid;
+  target.append(makeCard(project));
+});
+// Counts follow the project list when works are added or moved.
+document.querySelectorAll('[data-count]').forEach(element => {
+  const count = window.PORTFOLIO_PROJECTS.filter(project => element.dataset.count === 'all' || project.category === element.dataset.count).length;
+  element.textContent = element.hasAttribute('data-count-pad') ? String(count).padStart(2, '0') : String(count);
+});
 document.querySelectorAll('[data-filter]').forEach(button => {
   button.addEventListener('click', () => {
     const selected = button.dataset.filter;
     document.querySelectorAll('[data-filter]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
     document.querySelectorAll('.project-card').forEach(card => { card.hidden = selected !== 'all' && card.dataset.category !== selected; });
-    grid.hidden = selected === 'shorts';
+    grid.hidden = ['shorts', 'podcast'].includes(selected);
     document.querySelector('#shorts-section').hidden = !['all', 'shorts'].includes(selected);
+    document.querySelector('#podcasts-section').hidden = !['all', 'podcast'].includes(selected);
     const count = window.PORTFOLIO_PROJECTS.filter(project => selected === 'all' || project.category === selected).length;
     document.querySelector('#filter-status').textContent = `Работ в выбранной категории: ${count}`;
   });
@@ -76,3 +86,9 @@ function openVideo(project) {
 document.querySelector('#close-dialog').addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', event => { if (event.target === dialog) { const rect = dialog.getBoundingClientRect(); if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close(); } });
 dialog.addEventListener('close', () => { document.querySelector('#video-container').replaceChildren(); document.body.classList.remove('modal-open'); videoTrigger?.focus(); });
+
+const showreel = document.querySelector('#showreel');
+showreel.addEventListener('click', event => {
+  event.preventDefault();
+  openVideo({ title: 'Шоурил', category: 'showreel', youtubeId: showreel.dataset.youtubeId, url: showreel.href });
+});

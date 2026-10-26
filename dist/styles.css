@@ -7,3 +7,6 @@
 /* Keep Shorts vertical and inside the available screen height. */
 #video-dialog.video-portrait{width:min(440px,calc(100vw - 24px));padding:14px;max-height:calc(100dvh - 24px);overflow:auto}
 #video-dialog.video-portrait #video-container{aspect-ratio:9/16;width:min(100%,calc((100dvh - 160px) * 9 / 16));margin-inline:auto}
+
+.podcasts-section{padding-top:70px}
+@media(max-width:700px){.podcasts-section{padding-top:45px}}
