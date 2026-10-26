@@ -2,6 +2,7 @@ const grid = document.querySelector('#project-grid');
 const shortsGrid = document.querySelector('#shorts-grid');
 const podcastsGrid = document.querySelector('#podcasts-grid');
 const playIcon = '<span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4 20 12 7 20Z"/></svg></span>';
+const arrowIcon = '<svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 19 19 5M5 5h14v14"/></svg>';
 const categories = { youtube: 'YouTube', podcast: 'Подкаст', integration: 'Интеграция', shorts: 'Shorts / Reels' };
 function makeCard(project) {
   const card = document.createElement('article');
@@ -27,7 +28,8 @@ function makeCard(project) {
   action.insertAdjacentHTML('beforeend', playIcon);
   const platform = document.createElement('span');
   platform.className = 'project-platform';
-  platform.textContent = project.youtubeId ? 'YouTube' : 'Яндекс Диск ↗';
+  platform.textContent = project.youtubeId ? 'YouTube' : 'Яндекс Диск';
+  if (!project.youtubeId) platform.insertAdjacentHTML('beforeend', ' ' + arrowIcon);
   action.append(platform);
   const info = document.createElement('div');
   info.className = 'project-info';
@@ -39,7 +41,7 @@ function makeCard(project) {
   text.append(title, category);
   const arrow = document.createElement('span');
   arrow.className = 'project-arrow';
-  arrow.textContent = '↗';
+  arrow.innerHTML = arrowIcon;
   arrow.setAttribute('aria-hidden', 'true');
   info.append(text, arrow);
   card.append(action, info);
