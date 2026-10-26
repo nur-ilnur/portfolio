@@ -51,21 +51,24 @@ window.PORTFOLIO_PROJECTS = [
     "image": "assets/work-2-2.jpg"
   },
   {
-    "title": "Reels / 03",
+    "title": "Урбан Медиа × КГИ",
     "category": "shorts",
-    "url": "https://disk.yandex.ru/d/_2ZzmuIZkZgQ8A/REELS%2003%20v1.mp4",
-    "image": "assets/work-1-0.jpg"
+    "url": "https://www.youtube.com/shorts/9CqZImc0vO8",
+    "youtubeId": "9CqZImc0vO8",
+    "image": "assets/work-1-2.jpg"
   },
   {
-    "title": "Цареградцев",
+    "title": "Цареградцев про поражения",
     "category": "shorts",
-    "url": "https://disk.yandex.ru/d/_2ZzmuIZkZgQ8A/Reels%20%D0%A6%D0%B0%D1%80%D0%B5%D0%B3%D1%80%D0%B0%D0%B4%D1%86%D0%B5%D0%B2.mp4",
+    "url": "https://www.youtube.com/shorts/ox6aeqSkjSU",
+    "youtubeId": "ox6aeqSkjSU",
     "image": "assets/work-1-1.jpg"
   },
   {
-    "title": "КГИ · Водопровод",
+    "title": "Фил Найт",
     "category": "shorts",
-    "url": "https://disk.yandex.ru/d/_2ZzmuIZkZgQ8A/%D0%9A%D0%93%D0%98%20%D0%92%D0%BE%D0%B4%D0%BE%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B4_v1.mp4",
-    "image": "assets/work-1-2.jpg"
+    "url": "https://www.youtube.com/shorts/KGgoJ7t7xQI",
+    "youtubeId": "KGgoJ7t7xQI",
+    "image": "assets/work-1-0.jpg"
   }
 ];

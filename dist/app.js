@@ -60,6 +60,7 @@ const dialog = document.querySelector('#video-dialog');
 let videoTrigger;
 function openVideo(project) {
   videoTrigger = document.activeElement;
+  dialog.classList.toggle('video-portrait', project.category === 'shorts');
   document.querySelector('#video-title').textContent = project.title;
   document.querySelector('#video-original').href = project.url;
   const iframe = document.createElement('iframe');
