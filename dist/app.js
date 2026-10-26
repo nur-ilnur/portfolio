@@ -1,6 +1,6 @@
 const grid = document.querySelector('#project-grid');
 const shortsGrid = document.querySelector('#shorts-grid');
-const playIcon = '<span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 5.5 19 12 9 18.5Z"/></svg></span>';
+const playIcon = '<span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4 20 12 7 20Z"/></svg></span>';
 const categories = { youtube: 'YouTube', podcast: 'Подкаст', integration: 'Интеграция', shorts: 'Shorts / Reels' };
 function makeCard(project) {
   const card = document.createElement('article');
