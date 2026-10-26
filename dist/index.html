@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="Ильнур — режиссёр монтажа. Видеоработы для YouTube, подкасты, Shorts / Reels и рекламные интеграции. Связаться: @igataullin.">
+  <meta property="og:title" content="Ильнур — режиссёр монтажа">
+  <meta property="og:description" content="YouTube · Подкасты · Shorts / Reels · Интеграции">
+  <meta property="og:type" content="website">
+  <title>Ильнур — режиссёр монтажа</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="projects.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#works">Перейти к работам</a>
+  <header class="header shell">
+    <a href="#" class="wordmark" aria-label="Ильнур, в начало">ILNUR <span>/</span> <b>EDITOR</b></a>
+    <nav aria-label="Основная навигация"><a class="nav-work" href="#works">Работы</a><a class="nav-contact" href="#contact">Контакты</a><a class="button button-outline" href="https://t.me/igataullin" target="_blank" rel="noopener noreferrer">Написать в Telegram <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main>
+    <section class="intro shell" aria-labelledby="intro-title">
+      <div class="intro-kicker"><span class="status-dot"></span> ВИДЕОПОРТФОЛИО</div>
+      <h1 id="intro-title">Ильнур<span class="name-dot">.</span><br><span class="profession">Режиссёр монтажа</span></h1>
+      <div class="intro-bottom"><p>YouTube <span>·</span> Подкасты <span>·</span> Shorts / Reels <span>·</span> Интеграции</p><a href="#works" class="text-link">Смотреть работы <span aria-hidden="true">↓</span></a></div>
+      <a class="featured" href="https://yadi.sk/i/Fslv8RqLaPeLeQ" target="_blank" rel="noopener noreferrer" aria-label="Смотреть подкаст Бусов и Лазарев на Яндекс Диске">
+        <img src="assets/work-0-3.jpg" alt="Два участника подкаста за столом с микрофонами" fetchpriority="high" width="1024" height="576">
+        <div class="featured-top"><span class="frame-label">ИЗБРАННОЕ / ПОДКАСТ</span><span class="featured-index">01 — 11</span></div>
+        <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 5.5 19 12 9 18.5Z"/></svg></span>
+        <div class="featured-bottom"><div><span class="eyebrow">ПОДКАСТ</span><h2>Бусов × Лазарев</h2></div><span class="featured-cta">Смотреть на Яндекс Диске <span aria-hidden="true">↗</span></span></div>
+      </a>
+    </section>
+    <section class="works shell" id="works" aria-labelledby="works-title">
+      <div class="section-heading"><div class="section-title"><span class="eyebrow">ПОРТФОЛИО</span><h2 id="works-title">Избранные работы<span class="work-total">11</span></h2></div><p class="section-note">YouTube, подкасты<br>и короткие видео.</p></div>
+      <div class="filters" role="group" aria-label="Фильтр работ по формату">
+        <button type="button" data-filter="all" aria-pressed="true">Все работы <span>11</span></button>
+        <button type="button" data-filter="youtube" aria-pressed="false">YouTube <span>3</span></button>
+        <button type="button" data-filter="podcast" aria-pressed="false">Подкасты <span>2</span></button>
+        <button type="button" data-filter="shorts" aria-pressed="false">Shorts / Reels <span>3</span></button>
+        <button type="button" data-filter="integration" aria-pressed="false">Интеграции <span>3</span></button>
+      </div>
+      <p id="filter-status" class="sr-only" role="status" aria-live="polite"></p>
+      <div class="project-grid" id="project-grid"></div>
+      <section class="shorts-section" id="shorts-section" aria-labelledby="shorts-title"><div class="shorts-heading"><h3 id="shorts-title">Короткий формат<span class="work-total">03</span></h3><span class="eyebrow">ВЕРТИКАЛЬНЫЕ ВИДЕО / 9:16</span></div><div class="shorts-grid" id="shorts-grid"></div></section>
+      <noscript><p>Посмотреть подборки: <a href="https://disk.yandex.ru/d/EpiUjUJAdHiC_A">Подкасты</a>, <a href="https://disk.yandex.ru/d/_2ZzmuIZkZgQ8A">Shorts / Reels</a>, <a href="https://disk.yandex.ru/d/Pwsm1afQIDZiUA">Интеграции</a>.</p></noscript>
+    </section>
+    <section class="contact shell" id="contact" aria-labelledby="contact-title"><div class="contact-top"><span class="eyebrow">НА СВЯЗИ</span><span class="contact-mark" aria-hidden="true">↗</span></div><div class="contact-body"><div><h2 id="contact-title">Обсудим ваш проект?</h2><p>Напишите, что нужно смонтировать.<br>Обсудим задачу, сроки и детали.</p></div><a class="button button-lime" href="https://t.me/igataullin" target="_blank" rel="noopener noreferrer">Написать в Telegram <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="footer shell"><a class="wordmark" href="#">ILNUR <span>/</span> <b>EDITOR</b></a><p>Ильнур — режиссёр монтажа</p><a href="https://t.me/igataullin" target="_blank" rel="noopener noreferrer">@igataullin <span aria-hidden="true">↗</span></a></footer>
+  <dialog id="video-dialog" aria-labelledby="video-title"><div class="dialog-top"><h2 id="video-title"></h2><button type="button" id="close-dialog" aria-label="Закрыть видео">✕</button></div><div id="video-container"></div><a id="video-original" target="_blank" rel="noopener noreferrer">Открыть на YouTube ↗</a></dialog>
+</body>
+</html>

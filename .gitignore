@@ -1,0 +1,4 @@
+source-metadata.json
+youtube-metadata.json
+*.tar.gz
+.DS_Store
